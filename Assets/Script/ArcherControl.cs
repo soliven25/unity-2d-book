@@ -63,6 +63,8 @@ public class ArcherControl : MonoBehaviour {
 		
 		//get left & right arrow key or A & D key
 		float speed = Mathf.Abs(Input.GetAxis("Horizontal"));
+		//float speed = Mathf.Abs(Input.GetAxis("Mouse X"));
+		//Debug.Log("<color=blue>Axis</color> " + speed);
 		SetStatus(Status.Run, speed);
 		
 		mBackgrounds.FlowControl(speed);
